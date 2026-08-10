@@ -15,8 +15,9 @@ import FullScreenLetter from './components/FullScreenLetter'
 import FlyingButterflies from './components/FlyingButterflies'
 import './App.css'
 
-const AUDIO_SOURCE = '/audio/AUDIO-2026-07-19-00-23-56_6523.mp3'
-const LETTER_AUDIO_SOURCE = '/audio/reel-DP_b6OkD-az_7983.mp3'
+const BASE_PATH = import.meta.env.BASE_URL
+const AUDIO_SOURCE = `${BASE_PATH}audio/AUDIO-2026-07-19-00-23-56_6523.mp3`
+const LETTER_AUDIO_SOURCE = `${BASE_PATH}audio/reel-DP_b6OkD-az_7983.mp3`
 
 function BirthdayExperience() {
   const [phase, setPhase] = useState('dark')

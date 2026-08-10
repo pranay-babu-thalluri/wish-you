@@ -1,12 +1,13 @@
 import { useEffect, useRef, useState } from 'react'
 import { AnimatePresence, motion, useReducedMotion } from 'motion/react'
 
+const BASE_PATH = import.meta.env.BASE_URL
 const memories = [
-  { src: '/images/Image (2).jpg', alt: 'A special memory with Nikitha', caption: 'Some moments are too beautiful to stay only in memory.', rotation: -2.2, entrance: { x: -180, y: 36 }, decoration: 'tape' },
-  { src: '/images/Image (3).jpg', alt: 'Nikitha sharing a beautiful smile', caption: 'This smile has a way of making everything feel lighter.', rotation: 1.8, entrance: { x: 165, y: -28 }, decoration: 'flower' },
-  { src: '/images/Image (4).jpg', alt: 'A joyful moment worth remembering with Nikitha', caption: 'One of the many moments worth keeping forever.', rotation: -1.4, entrance: { x: -125, y: -70 }, decoration: 'tape' },
-  { src: '/images/Image (5).jpg', alt: 'An ordinary day made special by Nikitha', caption: 'Ordinary days feel special when they have you in them.', rotation: 2.1, entrance: { x: 145, y: 55 }, decoration: 'flower' },
-  { src: '/images/Image (6).jpg', alt: 'One more special memory celebrating Nikitha', caption: 'And this is only a small part of everything that makes you special.', rotation: -1.1, entrance: { x: 0, y: -105 }, decoration: 'tape' },
+  { src: `${BASE_PATH}images/Image (2).jpg`, alt: 'A special memory with Nikitha', caption: 'Some moments are too beautiful to stay only in memory.', rotation: -2.2, entrance: { x: -180, y: 36 }, decoration: 'tape' },
+  { src: `${BASE_PATH}images/Image (3).jpg`, alt: 'Nikitha sharing a beautiful smile', caption: 'This smile has a way of making everything feel lighter.', rotation: 1.8, entrance: { x: 165, y: -28 }, decoration: 'flower' },
+  { src: `${BASE_PATH}images/Image (4).jpg`, alt: 'A joyful moment worth remembering with Nikitha', caption: 'One of the many moments worth keeping forever.', rotation: -1.4, entrance: { x: -125, y: -70 }, decoration: 'tape' },
+  { src: `${BASE_PATH}images/Image (5).jpg`, alt: 'An ordinary day made special by Nikitha', caption: 'Ordinary days feel special when they have you in them.', rotation: 2.1, entrance: { x: 145, y: 55 }, decoration: 'flower' },
+  { src: `${BASE_PATH}images/Image (6).jpg`, alt: 'One more special memory celebrating Nikitha', caption: 'And this is only a small part of everything that makes you special.', rotation: -1.1, entrance: { x: 0, y: -105 }, decoration: 'tape' },
 ]
 
 function usePersistentCaption(text, index, active, reduced, completedCaptions) {

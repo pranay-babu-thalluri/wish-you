@@ -26,7 +26,7 @@
   position: absolute;
   z-index: 0;
   inset: 0;
-  background: linear-gradient(rgba(255,244,245,.08), rgba(224,206,238,.1)), url('/images/background-initial.png') center / cover no-repeat;
+  background: linear-gradient(rgba(255,244,245,.08), rgba(224,206,238,.1)), url('/wish-you/images/background-initial.png') center / cover no-repeat;
   content: '';
   opacity: 0;
   pointer-events: none;
@@ -40,7 +40,7 @@
 }
 
 .experience.is-birthday-reveal::after {
-  background: linear-gradient(rgba(255,247,238,.03), rgba(236,213,242,.04)), url('/images/happy bitrhday background.png') center / cover no-repeat;
+  background: linear-gradient(rgba(255,247,238,.03), rgba(236,213,242,.04)), url('/wish-you/images/happy%20bitrhday%20background.png') center / cover no-repeat;
   opacity: 1;
   scale: 1;
 }
@@ -302,7 +302,7 @@
 .is-bulb-scene.has-initial-background .birthday-card {
   min-height: clamp(420px, 55vh, 545px);
   border-color: rgba(255,255,255,.82);
-  background: linear-gradient(rgba(255,250,247,.16), rgba(255,236,240,.12)), url('/images/card inner background.png') center / cover no-repeat;
+  background: linear-gradient(rgba(255,250,247,.16), rgba(255,236,240,.12)), url('/wish-you/images/card%20inner%20background.png') center / cover no-repeat;
   border-width: 1.5px;
   box-shadow: 0 32px 85px rgba(84,45,99,.25), 0 0 68px rgba(255,218,181,.28), inset 0 0 32px rgba(255,255,255,.28);
 }
@@ -834,7 +834,7 @@
   border-radius: clamp(26px, 5vw, 42px);
   background:
     linear-gradient(rgba(255,250,247,.1), rgba(255,235,241,.08)),
-    url('/images/card inner background.png') center / 100% 100% no-repeat;
+    url('/wish-you/images/card%20inner%20background.png') center / 100% 100% no-repeat;
   box-shadow: 0 38px 100px rgba(88, 52, 105, .28), 0 14px 36px rgba(112, 67, 111, .16), 0 0 70px rgba(255,208,179,.25), inset 0 1px 0 white;
   text-align: center;
 }
@@ -986,7 +986,7 @@
   .is-bulb-scene.has-initial-background .card-stage { width: min(calc(100vw - 28px), 480px); margin: clamp(92px, 14vh, 124px) auto 0; }
   .is-bulb-scene.has-initial-background .birthday-card {
     min-height: min(62dvh, 455px);
-    background-image: linear-gradient(rgba(255,250,247,.13), rgba(255,236,240,.1)), url('/images/card inner background.png');
+    background-image: linear-gradient(rgba(255,250,247,.13), rgba(255,236,240,.1)), url('/wish-you/images/card%20inner%20background.png');
     background-position: center;
     background-size: 100% 100%;
   }
