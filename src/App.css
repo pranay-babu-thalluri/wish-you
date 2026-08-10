@@ -78,7 +78,7 @@
   --light-gold: #ffe996;
   --warm-white: #fffbd6;
   position: absolute;
-  z-index: 5;
+  z-index: 2;
   top: 0;
   left: 50%;
   width: min(100%, 430px);
@@ -240,6 +240,13 @@
 .bulb-fixture.compact .bulb-aura { opacity: 0; }
 .bulb-fixture.compact .bulb-control { cursor: default; pointer-events: none; }
 
+.card-stage {
+  position: relative;
+  z-index: 4;
+  width: min(88vw, 520px);
+  perspective: 1100px;
+}
+
 @keyframes filament-ignition {
   0% { opacity: 0; }
   10% { opacity: 1; }
@@ -255,7 +262,6 @@
 .invitation .eyebrow { margin: 0 0 10px; color: #eeeaf9; font-family: Georgia, 'Times New Roman', serif; font-size: clamp(1.45rem, 4vw, 2rem); letter-spacing: .025em; }
 .invitation p:last-child { margin: 0; font-size: clamp(.82rem, 2.6vw, .95rem); letter-spacing: .055em; }
 
-.card-stage { position: relative; z-index: 3; width: min(88vw, 520px); perspective: 1100px; }
 .birthday-card { position: relative; display: grid; width: 100%; min-height: clamp(360px, 55vh, 490px); overflow: hidden; border: 1px solid rgba(255,255,255,.75); border-radius: clamp(24px, 4vw, 34px); background: linear-gradient(145deg, rgba(255,252,246,.96), rgba(255,238,240,.95)); box-shadow: 0 28px 80px rgba(90,67,106,.2), 0 8px 24px rgba(100,70,89,.1); transform-style: preserve-3d; will-change: transform, opacity; }
 .birthday-card::before, .birthday-card::after { position: absolute; width: 150px; height: 150px; border-radius: 50%; content: ''; pointer-events: none; }
 .birthday-card::before { top: -78px; right: -48px; background: rgba(201,189,247,.38); }
